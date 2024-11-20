@@ -1,0 +1,23 @@
+:root {
+  --background: #c6f6d5; /* Light green (equivalent to bg-green-200 in Tailwind) */
+  --foreground: #171717; /* Default text color */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+      --background: #064e3b; /* Dark green (equivalent to bg-green-950 in Tailwind) */
+      --foreground: #ededed; /* Lighter text color for dark mode */
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+      text-wrap: balance;
+  }
+}

@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #edf2f7; /* Light green (Tailwind bg-green-200) */
+  --foreground: #171717; /* Dark text */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #edf2f7; /* Dark green (Tailwind bg-green-950) */
+    --foreground: #171717; /* Lighter text for dark mode */
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
